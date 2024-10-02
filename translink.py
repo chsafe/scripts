@@ -85,11 +85,19 @@ def main():
         print(f"Error executing encodeconfig.exe: {e}")
         print("Error Output:", e.stderr)
 
-    # Step 8: Delete connect.txt file
+    # Step 8: Print content of connect.txt file
     connect_file = "C:/Users/36850/Desktop/homevpn/homevpn/connect.txt"
     try:
+        with open(connect_file, 'r', encoding='utf-8') as file:
+            print(f"\nContents of {connect_file}:")
+            print(file.read())
+    except IOError as e:
+        print(f"Error reading {connect_file}: {e.strerror}")
+
+    # Step 9: Delete connect.txt file
+    try:
         os.remove(connect_file)
-        print(f"Successfully deleted {connect_file}")
+        print(f"\nSuccessfully deleted {connect_file}")
     except OSError as e:
         print(f"Error deleting {connect_file}: {e.strerror}")
 
