@@ -1,0 +1,1706 @@
+[
+    {
+        "areaCode": "86",
+        "enName": "China",
+        "name": "中国",
+        "id": 37,
+        "selfName": "中国",
+        "abbreviate": "CN"
+    },
+    {
+        "areaCode": "93",
+        "enName": "Afghanistan",
+        "name": "阿富汗",
+        "id": 2,
+        "selfName": "‫افغانستان‬",
+        "abbreviate": "AF"
+    },
+    {
+        "areaCode": "355",
+        "enName": "Albania",
+        "name": "阿尔巴尼亚",
+        "id": 3,
+        "selfName": "Shqipëria",
+        "abbreviate": "AL"
+    },
+    {
+        "areaCode": "213",
+        "enName": "Algeria",
+        "name": "阿尔及利亚",
+        "id": 4,
+        "selfName": "‫الجزائر‬",
+        "abbreviate": "DZ"
+    },
+    {
+        "areaCode": "1684",
+        "enName": "American Samoa",
+        "name": "美属萨摩亚",
+        "id": 251,
+        "selfName": "American Samoa",
+        "abbreviate": "AS"
+    },
+    {
+        "areaCode": "376",
+        "enName": "Andorra",
+        "name": "安道尔共和国",
+        "id": 5,
+        "selfName": "Andorra",
+        "abbreviate": "AD"
+    },
+    {
+        "areaCode": "244",
+        "enName": "Angola",
+        "name": "安哥拉",
+        "id": 1,
+        "selfName": "Angola",
+        "abbreviate": "AO"
+    },
+    {
+        "areaCode": "1264",
+        "enName": "Anguilla",
+        "name": "安圭拉岛",
+        "id": 6,
+        "selfName": "Anguilla",
+        "abbreviate": "AI"
+    },
+    {
+        "areaCode": "1268",
+        "enName": "Antigua and Barbuda",
+        "name": "安提瓜和巴布达",
+        "id": 7,
+        "selfName": "Antigua and Barbuda",
+        "abbreviate": "AG"
+    },
+    {
+        "areaCode": "54",
+        "enName": "Argentina",
+        "name": "阿根廷",
+        "id": 8,
+        "selfName": "Argentina",
+        "abbreviate": "AR"
+    },
+    {
+        "areaCode": "374",
+        "enName": "Armenia",
+        "name": "亚美尼亚",
+        "id": 9,
+        "selfName": "Հայաստան",
+        "abbreviate": "AM"
+    },
+    {
+        "areaCode": "297",
+        "enName": "Aruba",
+        "name": "阿鲁巴",
+        "id": 212,
+        "selfName": "Aruba",
+        "abbreviate": "AW"
+    },
+    {
+        "areaCode": "247",
+        "enName": "Ascension",
+        "name": "阿森松",
+        "id": 10,
+        "selfName": "Ascension Island",
+        "abbreviate": "AC"
+    },
+    {
+        "areaCode": "61",
+        "enName": "Australia",
+        "name": "澳大利亚",
+        "id": 11,
+        "selfName": "Australia",
+        "abbreviate": "AU"
+    },
+    {
+        "areaCode": "43",
+        "enName": "Austria",
+        "name": "奥地利",
+        "id": 12,
+        "selfName": "Österreich",
+        "abbreviate": "AT"
+    },
+    {
+        "areaCode": "994",
+        "enName": "Azerbaijan",
+        "name": "阿塞拜疆",
+        "id": 13,
+        "selfName": "Azərbaycan",
+        "abbreviate": "AZ"
+    },
+    {
+        "areaCode": "1242",
+        "enName": "Bahamas",
+        "name": "巴哈马",
+        "id": 14,
+        "selfName": "Bahamas",
+        "abbreviate": "BS"
+    },
+    {
+        "areaCode": "973",
+        "enName": "Bahrain",
+        "name": "巴林",
+        "id": 15,
+        "selfName": "‫البحرين‬",
+        "abbreviate": "BH"
+    },
+    {
+        "areaCode": "880",
+        "enName": "Bangladesh",
+        "name": "孟加拉国",
+        "id": 16,
+        "selfName": "বাংলাদেশ",
+        "abbreviate": "BD"
+    },
+    {
+        "areaCode": "1246",
+        "enName": "Barbados",
+        "name": "巴巴多斯",
+        "id": 17,
+        "selfName": "Barbados",
+        "abbreviate": "BB"
+    },
+    {
+        "areaCode": "375",
+        "enName": "Belarus",
+        "name": "白俄罗斯",
+        "id": 18,
+        "selfName": "Беларусь",
+        "abbreviate": "BY"
+    },
+    {
+        "areaCode": "32",
+        "enName": "Belgium",
+        "name": "比利时",
+        "id": 19,
+        "selfName": "België",
+        "abbreviate": "BE"
+    },
+    {
+        "areaCode": "501",
+        "enName": "Belize",
+        "name": "伯利兹",
+        "id": 20,
+        "selfName": "Belize",
+        "abbreviate": "BZ"
+    },
+    {
+        "areaCode": "229",
+        "enName": "Benin",
+        "name": "贝宁",
+        "id": 21,
+        "selfName": "Bénin",
+        "abbreviate": "BJ"
+    },
+    {
+        "areaCode": "1441",
+        "enName": "Bermuda",
+        "name": "百慕大",
+        "id": 248,
+        "selfName": "Bermuda",
+        "abbreviate": "BM"
+    },
+    {
+        "areaCode": "975",
+        "enName": "Bhutan",
+        "name": "不丹",
+        "id": 238,
+        "selfName": "འབྲུག",
+        "abbreviate": "BT"
+    },
+    {
+        "areaCode": "591",
+        "enName": "Bolivia",
+        "name": "玻利维亚",
+        "id": 23,
+        "selfName": "Bolivia",
+        "abbreviate": "BO"
+    },
+    {
+        "areaCode": "387",
+        "enName": "Bosnia and Herzegovina",
+        "name": "波斯尼亚与赫塞哥维纳",
+        "id": 221,
+        "selfName": "Босна и Херцеговина",
+        "abbreviate": "BA"
+    },
+    {
+        "areaCode": "267",
+        "enName": "Botswana",
+        "name": "博茨瓦纳",
+        "id": 24,
+        "selfName": "Botswana",
+        "abbreviate": "BW"
+    },
+    {
+        "areaCode": "55",
+        "enName": "Brazil",
+        "name": "巴西",
+        "id": 25,
+        "selfName": "Brasil",
+        "abbreviate": "BR"
+    },
+    {
+        "areaCode": "673",
+        "enName": "Brunei",
+        "name": "文莱",
+        "id": 26,
+        "selfName": "Brunei",
+        "abbreviate": "BN"
+    },
+    {
+        "areaCode": "359",
+        "enName": "Bulgaria",
+        "name": "保加利亚",
+        "id": 27,
+        "selfName": "България",
+        "abbreviate": "BG"
+    },
+    {
+        "areaCode": "226",
+        "enName": "Burkina-faso",
+        "name": "布基纳法索",
+        "id": 28,
+        "selfName": "Burkina Faso",
+        "abbreviate": "BF"
+    },
+    {
+        "areaCode": "95",
+        "enName": "Burma",
+        "name": "缅甸",
+        "id": 29,
+        "selfName": "မြန်မာ",
+        "abbreviate": "MM"
+    },
+    {
+        "areaCode": "257",
+        "enName": "Burundi",
+        "name": "布隆迪",
+        "id": 30,
+        "selfName": "Uburundi",
+        "abbreviate": "BI"
+    },
+    {
+        "areaCode": "237",
+        "enName": "Cameroon",
+        "name": "喀麦隆",
+        "id": 31,
+        "selfName": "Cameroun",
+        "abbreviate": "CM"
+    },
+    {
+        "areaCode": "001",
+        "enName": "Canada",
+        "name": "加拿大",
+        "id": 32,
+        "selfName": "Canada",
+        "abbreviate": "CA"
+    },
+    {
+        "areaCode": "238",
+        "enName": "Cape Verde",
+        "name": "佛得角",
+        "id": 201,
+        "selfName": "Kabu Verdi",
+        "abbreviate": "CV"
+    },
+    {
+        "areaCode": "1345",
+        "enName": "Cayman Is.",
+        "name": "开曼群岛",
+        "id": 33,
+        "selfName": "Cayman Islands",
+        "abbreviate": "KY"
+    },
+    {
+        "areaCode": "236",
+        "enName": "Central African Republic",
+        "name": "中非共和国",
+        "id": 34,
+        "selfName": "République centrafricaine",
+        "abbreviate": "CF"
+    },
+    {
+        "areaCode": "235",
+        "enName": "Chad",
+        "name": "乍得",
+        "id": 35,
+        "selfName": "Tchad",
+        "abbreviate": "TD"
+    },
+    {
+        "areaCode": "56",
+        "enName": "Chile",
+        "name": "智利",
+        "id": 36,
+        "selfName": "Chile",
+        "abbreviate": "CL"
+    },
+    {
+        "areaCode": "57",
+        "enName": "Colombia",
+        "name": "哥伦比亚",
+        "id": 38,
+        "selfName": "Colombia",
+        "abbreviate": "CO"
+    },
+    {
+        "areaCode": "269",
+        "enName": "Comoros",
+        "name": "科摩罗",
+        "id": 210,
+        "selfName": "‫جزر القمر‬",
+        "abbreviate": "KM"
+    },
+    {
+        "areaCode": "242",
+        "enName": "Congo",
+        "name": "刚果",
+        "id": 39,
+        "selfName": "Congo-Brazzaville",
+        "abbreviate": "CG"
+    },
+    {
+        "areaCode": "243",
+        "enName": "Congo, the Democratic Republic of the",
+        "name": "刚果民主共和国",
+        "id": 205,
+        "selfName": "Jamhuri ya Kidemokrasia ya Kongo",
+        "abbreviate": "CD"
+    },
+    {
+        "areaCode": "682",
+        "enName": "Cook Is.",
+        "name": "库克群岛",
+        "id": 40,
+        "selfName": "Cook Islands",
+        "abbreviate": "CK"
+    },
+    {
+        "areaCode": "506",
+        "enName": "Costa Rica",
+        "name": "哥斯达黎加",
+        "id": 41,
+        "selfName": "Costa Rica",
+        "abbreviate": "CR"
+    },
+    {
+        "areaCode": "385",
+        "enName": "Croatia",
+        "name": "克罗地亚",
+        "id": 220,
+        "selfName": "Hrvatska",
+        "abbreviate": "HR"
+    },
+    {
+        "areaCode": "53",
+        "enName": "Cuba",
+        "name": "古巴",
+        "id": 42,
+        "selfName": "Cuba",
+        "abbreviate": "CU"
+    },
+    {
+        "areaCode": "599",
+        "enName": "Curacao",
+        "name": "库拉索",
+        "id": 226,
+        "selfName": "Curacao",
+        "abbreviate": "CW"
+    },
+    {
+        "areaCode": "357",
+        "enName": "Cyprus",
+        "name": "塞浦路斯",
+        "id": 43,
+        "selfName": "Κύπρος",
+        "abbreviate": "CY"
+    },
+    {
+        "areaCode": "420",
+        "enName": "Czech Republic",
+        "name": "捷克",
+        "id": 44,
+        "selfName": "Česká republika",
+        "abbreviate": "CZ"
+    },
+    {
+        "areaCode": "45",
+        "enName": "Denmark",
+        "name": "丹麦",
+        "id": 45,
+        "selfName": "Danmark",
+        "abbreviate": "DK"
+    },
+    {
+        "areaCode": "253",
+        "enName": "Djibouti",
+        "name": "吉布提",
+        "id": 46,
+        "selfName": "Djibouti",
+        "abbreviate": "DJ"
+    },
+    {
+        "areaCode": "1767",
+        "enName": "Dominica",
+        "name": "多米尼克",
+        "id": 252,
+        "selfName": "Dominica",
+        "abbreviate": "DM"
+    },
+    {
+        "areaCode": "1809",
+        "enName": "Dominica Rep.",
+        "name": "多米尼加共和国",
+        "id": 47,
+        "selfName": "República Dominicana",
+        "abbreviate": "DO"
+    },
+    {
+        "areaCode": "593",
+        "enName": "Ecuador",
+        "name": "厄瓜多尔",
+        "id": 48,
+        "selfName": "Ecuador",
+        "abbreviate": "EC"
+    },
+    {
+        "areaCode": "20",
+        "enName": "Egypt",
+        "name": "埃及",
+        "id": 49,
+        "selfName": "‫مصر‬",
+        "abbreviate": "EG"
+    },
+    {
+        "areaCode": "503",
+        "enName": "EISalvador",
+        "name": "萨尔瓦多",
+        "id": 50,
+        "selfName": "El Salvador",
+        "abbreviate": "SV"
+    },
+    {
+        "areaCode": "240",
+        "enName": "Equatorial Guinea",
+        "name": "赤道几内亚",
+        "id": 203,
+        "selfName": "Guinea Ecuatorial",
+        "abbreviate": "GQ"
+    },
+    {
+        "areaCode": "372",
+        "enName": "Estonia",
+        "name": "爱沙尼亚",
+        "id": 51,
+        "selfName": "Eesti",
+        "abbreviate": "EE"
+    },
+    {
+        "areaCode": "251",
+        "enName": "Ethiopia",
+        "name": "埃塞俄比亚",
+        "id": 52,
+        "selfName": "Ethiopia",
+        "abbreviate": "ET"
+    },
+    {
+        "areaCode": "298",
+        "enName": "Faroe Islands",
+        "name": "法罗群岛",
+        "id": 213,
+        "selfName": "Føroyar",
+        "abbreviate": "FO"
+    },
+    {
+        "areaCode": "679",
+        "enName": "Fiji",
+        "name": "斐济",
+        "id": 53,
+        "selfName": "Fiji",
+        "abbreviate": "FJ"
+    },
+    {
+        "areaCode": "358",
+        "enName": "Finland",
+        "name": "芬兰",
+        "id": 54,
+        "selfName": "Suomi",
+        "abbreviate": "FI"
+    },
+    {
+        "areaCode": "33",
+        "enName": "France",
+        "name": "法国",
+        "id": 55,
+        "selfName": "France",
+        "abbreviate": "FR"
+    },
+    {
+        "areaCode": "594",
+        "enName": "French Guiana",
+        "name": "法属圭亚那",
+        "id": 56,
+        "selfName": "Guyane française",
+        "abbreviate": "GF"
+    },
+    {
+        "areaCode": "689",
+        "enName": "French Polynesia",
+        "name": "法属玻利尼西亚",
+        "id": 136,
+        "selfName": "Polynésie française",
+        "abbreviate": "PF"
+    },
+    {
+        "areaCode": "241",
+        "enName": "Gabon",
+        "name": "加蓬",
+        "id": 57,
+        "selfName": "Gabon",
+        "abbreviate": "GA"
+    },
+    {
+        "areaCode": "220",
+        "enName": "Gambia",
+        "name": "冈比亚",
+        "id": 58,
+        "selfName": "Gambia",
+        "abbreviate": "GM"
+    },
+    {
+        "areaCode": "995",
+        "enName": "Georgia",
+        "name": "格鲁吉亚",
+        "id": 59,
+        "selfName": "საქართველო",
+        "abbreviate": "GE"
+    },
+    {
+        "areaCode": "49",
+        "enName": "Germany",
+        "name": "德国",
+        "id": 60,
+        "selfName": "Deutschland",
+        "abbreviate": "DE"
+    },
+    {
+        "areaCode": "233",
+        "enName": "Ghana",
+        "name": "加纳",
+        "id": 61,
+        "selfName": "Gaana",
+        "abbreviate": "GH"
+    },
+    {
+        "areaCode": "350",
+        "enName": "Gibraltar",
+        "name": "直布罗陀",
+        "id": 62,
+        "selfName": "Gibraltar",
+        "abbreviate": "GI"
+    },
+    {
+        "areaCode": "30",
+        "enName": "Greece",
+        "name": "希腊",
+        "id": 63,
+        "selfName": "Ελλάδα",
+        "abbreviate": "GR"
+    },
+    {
+        "areaCode": "299",
+        "enName": "Greenland",
+        "name": "格陵兰",
+        "id": 214,
+        "selfName": "Kalaallit Nunaat",
+        "abbreviate": "GL"
+    },
+    {
+        "areaCode": "1473",
+        "enName": "Grenada",
+        "name": "格林纳达",
+        "id": 64,
+        "selfName": "Grenada",
+        "abbreviate": "GD"
+    },
+    {
+        "areaCode": "1671",
+        "enName": "Guam",
+        "name": "关岛",
+        "id": 65,
+        "selfName": "Guam",
+        "abbreviate": "GU"
+    },
+    {
+        "areaCode": "502",
+        "enName": "Guatemala",
+        "name": "危地马拉",
+        "id": 66,
+        "selfName": "Guatemala",
+        "abbreviate": "GT"
+    },
+    {
+        "areaCode": "224",
+        "enName": "Guinea",
+        "name": "几内亚",
+        "id": 67,
+        "selfName": "Guinée",
+        "abbreviate": "GN"
+    },
+    {
+        "areaCode": "245",
+        "enName": "Guinea",
+        "name": "几内亚比绍",
+        "id": 206,
+        "selfName": "Guiné Bissau",
+        "abbreviate": "GW"
+    },
+    {
+        "areaCode": "592",
+        "enName": "Guyana",
+        "name": "圭亚那",
+        "id": 68,
+        "selfName": "Guyana",
+        "abbreviate": "GY"
+    },
+    {
+        "areaCode": "509",
+        "enName": "Haiti",
+        "name": "海地",
+        "id": 69,
+        "selfName": "Haiti",
+        "abbreviate": "HT"
+    },
+    {
+        "areaCode": "504",
+        "enName": "Honduras",
+        "name": "洪都拉斯",
+        "id": 70,
+        "selfName": "Honduras",
+        "abbreviate": "HN"
+    },
+    {
+        "areaCode": "852",
+        "enName": "Hongkong",
+        "name": "中国香港",
+        "id": 71,
+        "selfName": "中国香港",
+        "abbreviate": "HK"
+    },
+    {
+        "areaCode": "36",
+        "enName": "Hungary",
+        "name": "匈牙利",
+        "id": 72,
+        "selfName": "Magyarország",
+        "abbreviate": "HU"
+    },
+    {
+        "areaCode": "354",
+        "enName": "Iceland",
+        "name": "冰岛",
+        "id": 73,
+        "selfName": "Ísland",
+        "abbreviate": "IS"
+    },
+    {
+        "areaCode": "91",
+        "enName": "India",
+        "name": "印度",
+        "id": 74,
+        "selfName": "भारत",
+        "abbreviate": "IN"
+    },
+    {
+        "areaCode": "62",
+        "enName": "Indonesia",
+        "name": "印度尼西亚",
+        "id": 75,
+        "selfName": "Indonesia",
+        "abbreviate": "ID"
+    },
+    {
+        "areaCode": "98",
+        "enName": "Iran",
+        "name": "伊朗",
+        "id": 76,
+        "selfName": "‫ایران‬",
+        "abbreviate": "IR"
+    },
+    {
+        "areaCode": "964",
+        "enName": "Iraq",
+        "name": "伊拉克",
+        "id": 77,
+        "selfName": "‫العراق‬",
+        "abbreviate": "IQ"
+    },
+    {
+        "areaCode": "353",
+        "enName": "Ireland",
+        "name": "爱尔兰",
+        "id": 78,
+        "selfName": "Ireland",
+        "abbreviate": "IE"
+    },
+    {
+        "areaCode": "353",
+        "enName": "Ireland",
+        "name": "爱尔兰共和国",
+        "id": 216,
+        "selfName": "Ireland",
+        "abbreviate": "IE"
+    },
+    {
+        "areaCode": "972",
+        "enName": "Israel",
+        "name": "以色列",
+        "id": 79,
+        "selfName": "‫ישראל‬",
+        "abbreviate": "IL"
+    },
+    {
+        "areaCode": "39",
+        "enName": "Italy",
+        "name": "意大利",
+        "id": 80,
+        "selfName": "Italia",
+        "abbreviate": "IT"
+    },
+    {
+        "areaCode": "225",
+        "enName": "IvoryCoast",
+        "name": "科特迪瓦",
+        "id": 81,
+        "selfName": "Côte d’Ivoire",
+        "abbreviate": "CI"
+    },
+    {
+        "areaCode": "1876",
+        "enName": "Jamaica",
+        "name": "牙买加",
+        "id": 82,
+        "selfName": "Jamaica",
+        "abbreviate": "JM"
+    },
+    {
+        "areaCode": "81",
+        "enName": "Japan",
+        "name": "日本",
+        "id": 83,
+        "selfName": "日本",
+        "abbreviate": "JP"
+    },
+    {
+        "areaCode": "962",
+        "enName": "Jordan",
+        "name": "约旦",
+        "id": 84,
+        "selfName": "‫الأردن‬",
+        "abbreviate": "JO"
+    },
+    {
+        "areaCode": "855",
+        "enName": "Kampuchea (Cambodia )",
+        "name": "柬埔寨",
+        "id": 85,
+        "selfName": "កម្ពុជា",
+        "abbreviate": "KH"
+    },
+    {
+        "areaCode": "7",
+        "enName": "Kazakhstan",
+        "name": "哈萨克",
+        "id": 193,
+        "selfName": "Kazakhstan",
+        "abbreviate": "KZ"
+    },
+    {
+        "areaCode": "254",
+        "enName": "Kenya",
+        "name": "肯尼亚",
+        "id": 87,
+        "selfName": "Kenya",
+        "abbreviate": "KE"
+    },
+    {
+        "areaCode": "686",
+        "enName": "Kiribati",
+        "name": "基里巴斯",
+        "id": 232,
+        "selfName": "Kiribati",
+        "abbreviate": "KI"
+    },
+    {
+        "areaCode": "82",
+        "enName": "Korea",
+        "name": "韩国",
+        "id": 88,
+        "selfName": "대한민국",
+        "abbreviate": "KR"
+    },
+    {
+        "areaCode": "965",
+        "enName": "Kuwait",
+        "name": "科威特",
+        "id": 89,
+        "selfName": "‫الكويت‬",
+        "abbreviate": "KW"
+    },
+    {
+        "areaCode": "996",
+        "enName": "Kyrgyzstan",
+        "name": "吉尔吉斯坦",
+        "id": 90,
+        "selfName": "Kyrgyzstan",
+        "abbreviate": "KG"
+    },
+    {
+        "areaCode": "856",
+        "enName": "Laos",
+        "name": "老挝",
+        "id": 91,
+        "selfName": "Laos",
+        "abbreviate": "LA"
+    },
+    {
+        "areaCode": "371",
+        "enName": "Latvia",
+        "name": "拉脱维亚",
+        "id": 92,
+        "selfName": "Latvija",
+        "abbreviate": "LV"
+    },
+    {
+        "areaCode": "961",
+        "enName": "Lebanon",
+        "name": "黎巴嫩",
+        "id": 93,
+        "selfName": "‫لبنان‬",
+        "abbreviate": "LB"
+    },
+    {
+        "areaCode": "266",
+        "enName": "Lesotho",
+        "name": "莱索托",
+        "id": 94,
+        "selfName": "Lesotho",
+        "abbreviate": "LS"
+    },
+    {
+        "areaCode": "231",
+        "enName": "Liberia",
+        "name": "利比里亚",
+        "id": 95,
+        "selfName": "Liberia",
+        "abbreviate": "LR"
+    },
+    {
+        "areaCode": "218",
+        "enName": "Libya",
+        "name": "利比亚",
+        "id": 96,
+        "selfName": "‫ليبيا‬",
+        "abbreviate": "LY"
+    },
+    {
+        "areaCode": "423",
+        "enName": "Liechtenstein",
+        "name": "列支敦士登",
+        "id": 97,
+        "selfName": "Liechtenstein",
+        "abbreviate": "LI"
+    },
+    {
+        "areaCode": "370",
+        "enName": "Lithuania",
+        "name": "立陶宛",
+        "id": 98,
+        "selfName": "Lietuva",
+        "abbreviate": "LT"
+    },
+    {
+        "areaCode": "352",
+        "enName": "Luxembourg",
+        "name": "卢森堡",
+        "id": 99,
+        "selfName": "Luxembourg",
+        "abbreviate": "LU"
+    },
+    {
+        "areaCode": "853",
+        "enName": "Macao",
+        "name": "中国澳门",
+        "id": 100,
+        "selfName": "中国澳门",
+        "abbreviate": "MO"
+    },
+    {
+        "areaCode": "389",
+        "enName": "Macedonia, the former Yugoslav Republic of",
+        "name": "马其顿",
+        "id": 215,
+        "selfName": "Македонија",
+        "abbreviate": "MK"
+    },
+    {
+        "areaCode": "261",
+        "enName": "Madagascar",
+        "name": "马达加斯加",
+        "id": 101,
+        "selfName": "Madagasikara",
+        "abbreviate": "MG"
+    },
+    {
+        "areaCode": "265",
+        "enName": "Malawi",
+        "name": "马拉维",
+        "id": 102,
+        "selfName": "Malawi",
+        "abbreviate": "MW"
+    },
+    {
+        "areaCode": "60",
+        "enName": "Malaysia",
+        "name": "马来西亚",
+        "id": 103,
+        "selfName": "Malaysia",
+        "abbreviate": "MY"
+    },
+    {
+        "areaCode": "960",
+        "enName": "Maldives",
+        "name": "马尔代夫",
+        "id": 104,
+        "selfName": "Maldives",
+        "abbreviate": "MV"
+    },
+    {
+        "areaCode": "223",
+        "enName": "Mali",
+        "name": "马里",
+        "id": 105,
+        "selfName": "Mali",
+        "abbreviate": "ML"
+    },
+    {
+        "areaCode": "356",
+        "enName": "Malta",
+        "name": "马耳他",
+        "id": 106,
+        "selfName": "Malta",
+        "abbreviate": "MT"
+    },
+    {
+        "areaCode": "596",
+        "enName": "Martinique",
+        "name": "马提尼克",
+        "id": 108,
+        "selfName": "Martinique",
+        "abbreviate": "MQ"
+    },
+    {
+        "areaCode": "222",
+        "enName": "Mauritania",
+        "name": "毛里塔尼亚",
+        "id": 196,
+        "selfName": "‫موريتانيا‬",
+        "abbreviate": "MR"
+    },
+    {
+        "areaCode": "230",
+        "enName": "Mauritius",
+        "name": "毛里求斯",
+        "id": 109,
+        "selfName": "Moris",
+        "abbreviate": "MU"
+    },
+    {
+        "areaCode": "269",
+        "enName": "Mayotte",
+        "name": "马约特",
+        "id": 211,
+        "selfName": "Mayotte",
+        "abbreviate": "YT"
+    },
+    {
+        "areaCode": "52",
+        "enName": "Mexico",
+        "name": "墨西哥",
+        "id": 110,
+        "selfName": "México",
+        "abbreviate": "MX"
+    },
+    {
+        "areaCode": "373",
+        "enName": "Moldova, Republic of",
+        "name": "摩尔多瓦",
+        "id": 111,
+        "selfName": "Republica Moldova",
+        "abbreviate": "MD"
+    },
+    {
+        "areaCode": "377",
+        "enName": "Monaco",
+        "name": "摩纳哥",
+        "id": 112,
+        "selfName": "Monaco",
+        "abbreviate": "MC"
+    },
+    {
+        "areaCode": "976",
+        "enName": "Mongolia",
+        "name": "蒙古",
+        "id": 113,
+        "selfName": "Монгол",
+        "abbreviate": "MN"
+    },
+    {
+        "areaCode": "382",
+        "enName": "Montenegro",
+        "name": "黑山共和国",
+        "id": 219,
+        "selfName": "Crna Gora",
+        "abbreviate": ""
+    },
+    {
+        "areaCode": "212",
+        "enName": "Morocco",
+        "name": "摩洛哥",
+        "id": 115,
+        "selfName": "‫المغرب‬",
+        "abbreviate": "MA"
+    },
+    {
+        "areaCode": "258",
+        "enName": "Mozambique",
+        "name": "莫桑比克",
+        "id": 116,
+        "selfName": "Moçambique",
+        "abbreviate": "MZ"
+    },
+    {
+        "areaCode": "264",
+        "enName": "Namibia",
+        "name": "纳米比亚",
+        "id": 117,
+        "selfName": "Namibia",
+        "abbreviate": "NA"
+    },
+    {
+        "areaCode": "977",
+        "enName": "Nepal",
+        "name": "尼泊尔",
+        "id": 119,
+        "selfName": "नेपाल",
+        "abbreviate": "NP"
+    },
+    {
+        "areaCode": "31",
+        "enName": "Netherlands",
+        "name": "荷兰",
+        "id": 121,
+        "selfName": "Nederland",
+        "abbreviate": "NL"
+    },
+    {
+        "areaCode": "687",
+        "enName": "New Caledonia",
+        "name": "新喀里多尼亚",
+        "id": 233,
+        "selfName": "Nouvelle-Calédonie",
+        "abbreviate": "NC"
+    },
+    {
+        "areaCode": "64",
+        "enName": "NewZealand",
+        "name": "新西兰",
+        "id": 122,
+        "selfName": "New Zealand",
+        "abbreviate": "NZ"
+    },
+    {
+        "areaCode": "505",
+        "enName": "Nicaragua",
+        "name": "尼加拉瓜",
+        "id": 123,
+        "selfName": "Nicaragua",
+        "abbreviate": "NI"
+    },
+    {
+        "areaCode": "227",
+        "enName": "Niger",
+        "name": "尼日尔",
+        "id": 124,
+        "selfName": "Nijar",
+        "abbreviate": "NE"
+    },
+    {
+        "areaCode": "234",
+        "enName": "Nigeria",
+        "name": "尼日利亚",
+        "id": 125,
+        "selfName": "Nigeria",
+        "abbreviate": "NG"
+    },
+    {
+        "areaCode": "47",
+        "enName": "Norway",
+        "name": "挪威",
+        "id": 127,
+        "selfName": "Norge",
+        "abbreviate": "NO"
+    },
+    {
+        "areaCode": "968",
+        "enName": "Oman",
+        "name": "阿曼",
+        "id": 128,
+        "selfName": "‫عُمان‬",
+        "abbreviate": "OM"
+    },
+    {
+        "areaCode": "92",
+        "enName": "Pakistan",
+        "name": "巴基斯坦",
+        "id": 129,
+        "selfName": "‫پاکستان‬",
+        "abbreviate": "PK"
+    },
+    {
+        "areaCode": "680",
+        "enName": "Palau",
+        "name": "帕劳",
+        "id": 230,
+        "selfName": "Palau",
+        "abbreviate": "PW"
+    },
+    {
+        "areaCode": "930",
+        "enName": "Palestine, State of",
+        "name": "巴勒斯坦",
+        "id": 236,
+        "selfName": "Palestine, State of",
+        "abbreviate": "PS"
+    },
+    {
+        "areaCode": "507",
+        "enName": "Panama",
+        "name": "巴拿马",
+        "id": 130,
+        "selfName": "Panamá",
+        "abbreviate": "PA"
+    },
+    {
+        "areaCode": "675",
+        "enName": "Papua New Cuinea",
+        "name": "巴布亚新几内亚",
+        "id": 131,
+        "selfName": "Papua New Guinea",
+        "abbreviate": "PG"
+    },
+    {
+        "areaCode": "595",
+        "enName": "Paraguay",
+        "name": "巴拉圭",
+        "id": 132,
+        "selfName": "Paraguay",
+        "abbreviate": "PY"
+    },
+    {
+        "areaCode": "51",
+        "enName": "Peru",
+        "name": "秘鲁",
+        "id": 133,
+        "selfName": "Perú",
+        "abbreviate": "PE"
+    },
+    {
+        "areaCode": "63",
+        "enName": "Philippines",
+        "name": "菲律宾",
+        "id": 134,
+        "selfName": "Philippines",
+        "abbreviate": "PH"
+    },
+    {
+        "areaCode": "48",
+        "enName": "Poland",
+        "name": "波兰",
+        "id": 135,
+        "selfName": "Polska",
+        "abbreviate": "PL"
+    },
+    {
+        "areaCode": "351",
+        "enName": "Portugal",
+        "name": "葡萄牙",
+        "id": 137,
+        "selfName": "Portugal",
+        "abbreviate": "PT"
+    },
+    {
+        "areaCode": "1787",
+        "enName": "PuertoRico",
+        "name": "波多黎各",
+        "id": 138,
+        "selfName": "Puerto Rico",
+        "abbreviate": "PR"
+    },
+    {
+        "areaCode": "974",
+        "enName": "Qatar",
+        "name": "卡塔尔",
+        "id": 139,
+        "selfName": "‫قطر‬",
+        "abbreviate": "QA"
+    },
+    {
+        "areaCode": "262",
+        "enName": "Réunion",
+        "name": "留尼汪",
+        "id": 209,
+        "selfName": "Réunion",
+        "abbreviate": "RE"
+    },
+    {
+        "areaCode": "40",
+        "enName": "Romania",
+        "name": "罗马尼亚",
+        "id": 141,
+        "selfName": "România",
+        "abbreviate": "RO"
+    },
+    {
+        "areaCode": "7",
+        "enName": "Russia",
+        "name": "俄罗斯",
+        "id": 142,
+        "selfName": "Россия",
+        "abbreviate": "RU"
+    },
+    {
+        "areaCode": "250",
+        "enName": "Rwanda",
+        "name": "卢旺达",
+        "id": 208,
+        "selfName": "Rwanda",
+        "abbreviate": "RW"
+    },
+    {
+        "areaCode": "1869",
+        "enName": "Saint Kitts and Nevis",
+        "name": "圣克里斯多福与尼维斯",
+        "id": 254,
+        "selfName": "Saint Kitts and Nevis",
+        "abbreviate": "KN"
+    },
+    {
+        "areaCode": "1758",
+        "enName": "Saint Lueia",
+        "name": "圣卢西亚",
+        "id": 143,
+        "selfName": "Saint Lucia",
+        "abbreviate": "LC"
+    },
+    {
+        "areaCode": "508",
+        "enName": "Saint Pierre and Miquelon",
+        "name": "圣皮耶与密克隆群岛",
+        "id": 222,
+        "selfName": "Saint-Pierre-et-Miquelon",
+        "abbreviate": "PM"
+    },
+    {
+        "areaCode": "685",
+        "enName": "Samoa",
+        "name": "萨摩亚",
+        "id": 231,
+        "selfName": "Samoa",
+        "abbreviate": "WS"
+    },
+    {
+        "areaCode": "378",
+        "enName": "San Marino",
+        "name": "圣马力诺",
+        "id": 147,
+        "selfName": "San Marino",
+        "abbreviate": "SM"
+    },
+    {
+        "areaCode": "239",
+        "enName": "Sao Tome and Principe",
+        "name": "圣多美和普林西比",
+        "id": 148,
+        "selfName": "São Tomé e Príncipe",
+        "abbreviate": "ST"
+    },
+    {
+        "areaCode": "966",
+        "enName": "Saudi Arabia",
+        "name": "沙特阿拉伯",
+        "id": 149,
+        "selfName": "‫المملكة العربية السعودية‬",
+        "abbreviate": "SA"
+    },
+    {
+        "areaCode": "221",
+        "enName": "Senegal",
+        "name": "塞内加尔",
+        "id": 150,
+        "selfName": "Sénégal",
+        "abbreviate": "SN"
+    },
+    {
+        "areaCode": "381",
+        "enName": "Serbia",
+        "name": "塞尔维亚共和国",
+        "id": 218,
+        "selfName": "Србија",
+        "abbreviate": "RS"
+    },
+    {
+        "areaCode": "248",
+        "enName": "Seychelles",
+        "name": "塞舌尔",
+        "id": 151,
+        "selfName": "Seychelles",
+        "abbreviate": "SC"
+    },
+    {
+        "areaCode": "232",
+        "enName": "Sierra Leone",
+        "name": "塞拉利昂",
+        "id": 152,
+        "selfName": "Sierra Leone",
+        "abbreviate": "SL"
+    },
+    {
+        "areaCode": "65",
+        "enName": "Singapore",
+        "name": "新加坡",
+        "id": 153,
+        "selfName": "Singapore",
+        "abbreviate": "SG"
+    },
+    {
+        "areaCode": "421",
+        "enName": "Slovakia",
+        "name": "斯洛伐克",
+        "id": 154,
+        "selfName": "Slovensko",
+        "abbreviate": "SK"
+    },
+    {
+        "areaCode": "386",
+        "enName": "Slovenia",
+        "name": "斯洛文尼亚",
+        "id": 155,
+        "selfName": "Slovenija",
+        "abbreviate": "SI"
+    },
+    {
+        "areaCode": "677",
+        "enName": "Solomon Is",
+        "name": "所罗门群岛",
+        "id": 156,
+        "selfName": "Solomon Islands",
+        "abbreviate": "SB"
+    },
+    {
+        "areaCode": "252",
+        "enName": "Somali",
+        "name": "索马里",
+        "id": 157,
+        "selfName": "Soomaaliya",
+        "abbreviate": "SO"
+    },
+    {
+        "areaCode": "27",
+        "enName": "South Africa",
+        "name": "南非",
+        "id": 158,
+        "selfName": "South Africa",
+        "abbreviate": "ZA"
+    },
+    {
+        "areaCode": "211",
+        "enName": "South Sudan",
+        "name": "南苏丹",
+        "id": 195,
+        "selfName": "‫جنوب السودان‬",
+        "abbreviate": "SS"
+    },
+    {
+        "areaCode": "34",
+        "enName": "Spain",
+        "name": "西班牙",
+        "id": 159,
+        "selfName": "España",
+        "abbreviate": "ES"
+    },
+    {
+        "areaCode": "94",
+        "enName": "Sri Lanka",
+        "name": "斯里兰卡",
+        "id": 160,
+        "selfName": "ශ්‍රී ලංකාව",
+        "abbreviate": "LK"
+    },
+    {
+        "areaCode": "249",
+        "enName": "Sudan",
+        "name": "苏丹",
+        "id": 163,
+        "selfName": "‫السودان‬",
+        "abbreviate": "SD"
+    },
+    {
+        "areaCode": "597",
+        "enName": "Suriname",
+        "name": "苏里南",
+        "id": 164,
+        "selfName": "Suriname",
+        "abbreviate": "SR"
+    },
+    {
+        "areaCode": "268",
+        "enName": "Swaziland",
+        "name": "斯威士兰",
+        "id": 165,
+        "selfName": "Swaziland",
+        "abbreviate": "SZ"
+    },
+    {
+        "areaCode": "46",
+        "enName": "Sweden",
+        "name": "瑞典",
+        "id": 166,
+        "selfName": "Sverige",
+        "abbreviate": "SE"
+    },
+    {
+        "areaCode": "41",
+        "enName": "Switzerland",
+        "name": "瑞士",
+        "id": 167,
+        "selfName": "Schweiz",
+        "abbreviate": "CH"
+    },
+    {
+        "areaCode": "963",
+        "enName": "Syria",
+        "name": "叙利亚",
+        "id": 168,
+        "selfName": "‫سوريا‬",
+        "abbreviate": "SY"
+    },
+    {
+        "areaCode": "886",
+        "enName": "Taiwan",
+        "name": "中国台湾",
+        "id": 169,
+        "selfName": "中国台湾",
+        "abbreviate": "CN"
+    },
+    {
+        "areaCode": "992",
+        "enName": "Tajikistan",
+        "name": "塔吉克",
+        "id": 240,
+        "selfName": "Tajikistan",
+        "abbreviate": "TJ"
+    },
+    {
+        "areaCode": "255",
+        "enName": "Tanzania",
+        "name": "坦桑尼亚",
+        "id": 171,
+        "selfName": "Tanzania",
+        "abbreviate": "TZ"
+    },
+    {
+        "areaCode": "66",
+        "enName": "Thailand",
+        "name": "泰国",
+        "id": 172,
+        "selfName": "ไทย",
+        "abbreviate": "TH"
+    },
+    {
+        "areaCode": "670",
+        "enName": "Timor",
+        "name": "东帝汶",
+        "id": 227,
+        "selfName": "Timor-Leste",
+        "abbreviate": "TL"
+    },
+    {
+        "areaCode": "228",
+        "enName": "Togo",
+        "name": "多哥",
+        "id": 173,
+        "selfName": "Togo",
+        "abbreviate": "TG"
+    },
+    {
+        "areaCode": "676",
+        "enName": "Tonga",
+        "name": "汤加",
+        "id": 174,
+        "selfName": "Tonga",
+        "abbreviate": "TO"
+    },
+    {
+        "areaCode": "1868",
+        "enName": "Trinidad and Tobago",
+        "name": "特立尼达和多巴哥",
+        "id": 175,
+        "selfName": "Trinidad and Tobago",
+        "abbreviate": "TT"
+    },
+    {
+        "areaCode": "216",
+        "enName": "Tunisia",
+        "name": "突尼斯",
+        "id": 176,
+        "selfName": "‫تونس‬",
+        "abbreviate": "TN"
+    },
+    {
+        "areaCode": "90",
+        "enName": "Turkey",
+        "name": "土耳其",
+        "id": 177,
+        "selfName": "Türkiye",
+        "abbreviate": "TR"
+    },
+    {
+        "areaCode": "993",
+        "enName": "Turkmenistan",
+        "name": "土库曼斯坦",
+        "id": 178,
+        "selfName": "Turkmenistan",
+        "abbreviate": "TM"
+    },
+    {
+        "areaCode": "256",
+        "enName": "Uganda",
+        "name": "乌干达",
+        "id": 179,
+        "selfName": "Uganda",
+        "abbreviate": "UG"
+    },
+    {
+        "areaCode": "380",
+        "enName": "Ukraine",
+        "name": "乌克兰",
+        "id": 180,
+        "selfName": "Україна",
+        "abbreviate": "UA"
+    },
+    {
+        "areaCode": "971",
+        "enName": "United Arab Emirates",
+        "name": "阿拉伯联合酋长国",
+        "id": 181,
+        "selfName": "‫الإمارات العربية المتحدة‬",
+        "abbreviate": "AE"
+    },
+    {
+        "areaCode": "44",
+        "enName": "United Kingdom",
+        "name": "英国",
+        "id": 182,
+        "selfName": "United Kingdom",
+        "abbreviate": "GB"
+    },
+    {
+        "areaCode": "1",
+        "enName": "United States of America",
+        "name": "美国",
+        "id": 183,
+        "selfName": "United States of America",
+        "abbreviate": "US"
+    },
+    {
+        "areaCode": "1340",
+        "enName": "United States Virgin Islands",
+        "name": "美属维尔京群岛",
+        "id": 247,
+        "selfName": "U.S. Virgin Islands",
+        "abbreviate": "US"
+    },
+    {
+        "areaCode": "598",
+        "enName": "Uruguay",
+        "name": "乌拉圭",
+        "id": 184,
+        "selfName": "Uruguay",
+        "abbreviate": "UY"
+    },
+    {
+        "areaCode": "998",
+        "enName": "Uzbekistan",
+        "name": "乌兹别克斯坦",
+        "id": 185,
+        "selfName": "Ўзбекистон",
+        "abbreviate": "UZ"
+    },
+    {
+        "areaCode": "678",
+        "enName": "Vanuatu",
+        "name": "瓦努阿图",
+        "id": 229,
+        "selfName": "Vanuatu",
+        "abbreviate": "VU"
+    },
+    {
+        "areaCode": "58",
+        "enName": "Venezuela",
+        "name": "委内瑞拉",
+        "id": 186,
+        "selfName": "Venezuela",
+        "abbreviate": "VE"
+    },
+    {
+        "areaCode": "84",
+        "enName": "Vietnam",
+        "name": "越南",
+        "id": 187,
+        "selfName": "Việt Nam",
+        "abbreviate": "VN"
+    },
+    {
+        "areaCode": "1284",
+        "enName": "Virgin Islands, U.S.",
+        "name": "英属维尔京群岛",
+        "id": 246,
+        "selfName": "British Virgin Islands",
+        "abbreviate": "VG"
+    },
+    {
+        "areaCode": "967",
+        "enName": "Yemen",
+        "name": "也门",
+        "id": 188,
+        "selfName": "‫اليمن‬",
+        "abbreviate": "YE"
+    },
+    {
+        "areaCode": "260",
+        "enName": "Zambia",
+        "name": "赞比亚",
+        "id": 192,
+        "selfName": "Zambia",
+        "abbreviate": "ZM"
+    },
+    {
+        "areaCode": "263",
+        "enName": "Zimbabwe",
+        "name": "津巴布韦",
+        "id": 190,
+        "selfName": "Zimbabwe",
+        "abbreviate": "ZW"
+    }
+]
