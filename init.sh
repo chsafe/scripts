@@ -61,8 +61,6 @@ function install_gost() {
     echo
     echo "3. 开启本地9998端口，并将流量转发至远端的8888端口："
     echo "   nohup gost -L tcp://:9998/5.83.221.65:8888 &"
-    echo
-    echo "请根据需要选择适合的命令执行。"
 }
 
 function install_docker() {
@@ -98,6 +96,11 @@ function install_mysql_and_create_db() {
     echo "MySQL 安装及数据库创建完成。"
 }
 
+function install_or_uninstall_wordpress() {
+    echo "正在执行 WordPress 安装/卸载脚本..."
+    bash <(curl -s https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/wp-install-uninstall.sh)
+}
+
 # 主菜单
 while true; do
     echo "请选择要执行的操作："
@@ -111,7 +114,8 @@ while true; do
     echo "8. 安装aaPanel"
     echo "9. 运行融合怪脚本测评"
     echo "10. 安装 MySQL 并新增数据库"
-    echo "11. 退出"
+    echo "11. WordPress 安装和卸载"
+    echo "12. 退出"
     read -p "请输入选项编号: " choice
 
     case $choice in
@@ -146,6 +150,9 @@ while true; do
             install_mysql_and_create_db
             ;;
         11)
+            install_or_uninstall_wordpress
+            ;;
+        12)
             echo "退出脚本"
             exit 0
             ;;
