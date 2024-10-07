@@ -32,20 +32,14 @@ echo "正在更新系统并安装 Nginx 和 Certbot..."
 apt-get update
 apt-get install -y nginx certbot python3-certbot-nginx
 
+
+
 # 配置 Nginx 以 HTTP 模式启动，反向代理到本地 Docker 容器的 8080 端口
 NGINX_CONFIG="/etc/nginx/sites-available/$DOMAIN"
 cat > $NGINX_CONFIG <<EOF
 server {
     listen 80;
     server_name $DOMAIN;
-
-    location / {
-        proxy_pass http://localhost:8080;
-        proxy_set_header Host \$host;
-        proxy_set_header X-Real-IP \$remote_addr;
-        proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto \$scheme;
-    }
 }
 EOF
 
