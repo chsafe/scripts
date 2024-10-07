@@ -70,7 +70,7 @@ EOL
 
 function install_xrayr() {
     echo "正在安装XrayR..."
-    bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
+    bash <(curl -Ls https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/xrayr.sh)
 
     echo "XrayR 安装完成。"
 }
