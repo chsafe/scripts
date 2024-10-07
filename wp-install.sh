@@ -11,8 +11,8 @@ echo
 # 提示用户输入域名（用于配置 HTTPS）
 read -p '请输入要配置的域名 (如 example.com): ' DOMAIN
 
-# 提示用户输入邮箱地址（用于 SSL 证书）
-read -p '请输入你的邮箱地址 (用于接收 SSL 证书通知): ' EMAIL
+# 硬编码邮箱地址（用于 SSL 证书）
+EMAIL="admin@rushvpn.win"
 
 # 确保脚本在 Debian 系统上运行，且 `debconf-utils` 包已安装
 if ! command -v apt-get &> /dev/null; then
@@ -34,18 +34,13 @@ echo '* libraries/restart-without-asking boolean true' | debconf-set-selections
 
 # 更新系统
 apt-get update -y
-apt-get upgrade -yq
 
-# 安装 Apache、MySQL、PHP 和 Certbot
-apt-get install -y apache2 mysql-server php libapache2-mod-php php-mysql php-cli php-curl php-zip php-gd php-mbstring php-xml php-xmlrpc certbot python3-certbot-apache
+# 安装 Nginx、MySQL、PHP 和 Certbot
+apt-get install -y nginx mysql-server php-fpm php-mysql php-cli php-curl php-zip php-gd php-mbstring php-xml php-xmlrpc certbot python3-certbot-nginx
 
-# 启用 Apache 模块
-a2enmod ssl
-a2enmod rewrite
-
-# 启动并启用 Apache 和 MySQL
-systemctl start apache2
-systemctl enable apache2
+# 启动并启用 Nginx 和 MySQL
+systemctl start nginx
+systemctl enable nginx
 systemctl start mysql
 systemctl enable mysql
 
@@ -76,34 +71,45 @@ sed -i "s/database_name_here/${DB_NAME}/" wp-config.php
 sed -i "s/username_here/${DB_USER}/" wp-config.php
 sed -i "s/password_here/${DB_PASSWORD}/" wp-config.php
 
-# 创建和启用虚拟主机配置文件
-VHOST_CONF="/etc/apache2/sites-available/$DOMAIN.conf"
+# 创建和启用 Nginx 虚拟主机配置文件
+VHOST_CONF="/etc/nginx/sites-available/$DOMAIN"
 
 cat <<EOF > $VHOST_CONF
-<VirtualHost *:80>
-    ServerName $DOMAIN
-    DocumentRoot /var/www/html
-    <Directory /var/www/html>
-        AllowOverride All
-        Require all granted
-    </Directory>
-</VirtualHost>
+server {
+    listen 80;
+    server_name $DOMAIN;
+
+    root /var/www/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files \$uri \$uri/ /index.php?\$args;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;  # 确保 PHP 版本正确
+        fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
 EOF
 
-# 禁用默认虚拟主机配置
-a2dissite 000-default.conf
-
 # 启用新的虚拟主机配置
-a2ensite $DOMAIN.conf
-systemctl reload apache2
+ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
+systemctl reload nginx
 
-# 尝试使用 Certbot 为 Apache 获取 SSL 证书
+# 尝试使用 Certbot 为 Nginx 获取 SSL 证书
 RETRY_COUNT=0
 MAX_RETRIES=5
 CERT_OBTAINED=false
 
 while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-    certbot --apache -d $DOMAIN --non-interactive --agree-tos -m $EMAIL
+    certbot --nginx -d $DOMAIN --non-interactive --agree-tos -m $EMAIL
     if [ $? -eq 0 ]; then
         CERT_OBTAINED=true
         break
@@ -118,30 +124,39 @@ if [ "$CERT_OBTAINED" = true ]; then
     echo "SSL 证书生成成功，配置 HTTPS。"
 
     # 创建和启用 SSL 虚拟主机配置文件
-    VHOST_SSL_CONF="/etc/apache2/sites-available/$DOMAIN-ssl.conf"
+    VHOST_SSL_CONF="/etc/nginx/sites-available/$DOMAIN-ssl"
 
     cat <<EOF > $VHOST_SSL_CONF
-<VirtualHost *:443>
-    ServerName $DOMAIN
+server {
+    listen 443 ssl;
+    server_name $DOMAIN;
 
-    DocumentRoot /var/www/html
+    root /var/www/html;
+    index index.php index.html index.htm;
 
-    SSLEngine on
-    SSLCertificateFile /etc/letsencrypt/live/$DOMAIN/fullchain.pem
-    SSLCertificateKeyFile /etc/letsencrypt/live/$DOMAIN/privkey.pem
+    ssl_certificate /etc/letsencrypt/live/$DOMAIN/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/$DOMAIN/privkey.pem;
 
-    <Directory /var/www/html>
-        AllowOverride All
-        Require all granted
-    </Directory>
+    location / {
+        try_files \$uri \$uri/ /index.php?\$args;
+    }
 
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;  # 确保 PHP 版本正确
+        fastcgi_param SCRIPT_FILENAME \$document_root\$fastcgi_script_name;
+        include fastcgi_params;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
 EOF
 
-    a2ensite $DOMAIN-ssl.conf
-    systemctl reload apache2
+    # 启用 SSL 虚拟主机
+    ln -s /etc/nginx/sites-available/$DOMAIN-ssl /etc/nginx/sites-enabled/
+    systemctl reload nginx
 
     # 启用自动更新证书
     systemctl enable certbot.timer
