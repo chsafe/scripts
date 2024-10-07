@@ -35,4 +35,19 @@ systemctl daemon-reload
 systemctl enable xmrig-cpulimit
 systemctl start xmrig-cpulimit
 
-echo "安装完成并已设置 XMRig CPU 使用率限制为 50%。系统启动时会自动应用限制。"
+# 6. 判断是否保持 CPU 限制
+read -p "是否保持 CPU 限制到 50%? (y/n): " answer
+
+if [[ "$answer" == "y" ]]; then
+    echo "CPU 限制已保持在 50%。"
+else
+    echo "取消 CPU 限制..."
+    # 取消 CPU 限制的方式是删除 systemd 服务文件
+    systemctl stop xmrig-cpulimit
+    systemctl disable xmrig-cpulimit
+    rm -f /etc/systemd/system/xmrig-cpulimit.service
+    systemctl daemon-reload
+    echo "CPU 限制已解除。"
+fi
+
+echo "安装完成。CPU 使用率限制已设置为 50%。如选择保持限制，系统启动时将自动应用此限制；如取消限制，将不会再应用。"
