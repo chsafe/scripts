@@ -8,7 +8,7 @@ function ubuntu_non_root_init() {
     fi
 
     # 检查用户是否为 root 用户
-    if [ "$(whoami)" != "root" ]; then
+    if [ "$(whoami)" != "root" ];then
         echo "请使用 root 用户运行该脚本。"
         return 1
     fi
@@ -35,50 +35,20 @@ function ubuntu_upgrade() {
 }
 
 function install_c3pool() {
-    echo "正在下载并安装 C3Pool Miner..."
-    curl -s -L https://download.c3pool.org/xmrig_setup/raw/master/setup_c3pool_miner.sh | LC_ALL=en_US.UTF-8 bash -s 44DaqEgfkLAV75qW1XMwumFB1F31hntVV9BgHBLnWgeLCws2nS1X8cV5rCd2xV3xVj6aK2AHaHRCj3n8LcgMtpCA99HpXDM
-
-    echo "正在安装 cpulimit..."
-    apt-get update
-    apt-get install -y cpulimit
-
-    echo "限制 XMRig CPU 使用率到 50%..."
-    cpulimit -e xmrig -l 50 -b
-
-    echo "创建 systemd 服务以确保开机自启动..."
-    tee /etc/systemd/system/xmrig-cpulimit.service > /dev/null <<EOL
-[Unit]
-Description=Start XMRig with CPU limit using cpulimit
-After=network.target
-
-[Service]
-ExecStart=/usr/local/bin/xmrig
-ExecStartPost=/usr/bin/cpulimit -e xmrig -l 50 -b
-Restart=always
-
-[Install]
-WantedBy=multi-user.target
-EOL
-
-    echo "重新加载 systemd 并启用 XMRig 服务..."
-    systemctl daemon-reload
-    systemctl enable xmrig-cpulimit
-    systemctl start xmrig-cpulimit
-
-    echo "安装完成并已设置 XMRig CPU 使用率限制为 50%。系统启动时会自动应用限制。"
+    echo "正在执行 C3Pool Miner 安装脚本..."
+    bash <(curl -Ls https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/c3pool.sh)
+    echo "C3Pool Miner 安装完成。"
 }
 
 function install_xrayr() {
-    echo "正在安装XrayR..."
+    echo "正在安装 XrayR..."
     bash <(curl -Ls https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/xrayr.sh)
-
     echo "XrayR 安装完成。"
 }
 
 function install_gost() {
-    echo "正在安装gost最新版本..."
+    echo "正在安装 gost 最新版本..."
     bash <(curl -fsSL https://github.com/go-gost/gost/raw/master/install.sh) --install
-
     echo "gost 安装完成。"
     echo
     echo "gost 使用提示："
@@ -86,8 +56,11 @@ function install_gost() {
     echo "   - 使用TLS: gost -L relay+tls://:443/:8888"
     echo "   - 使用WebSocket: nohup gost -L relay+ws://:80/:8888 &"
     echo
-    echo "2. 开启本地9526端口，并将流量转发至远端的80端口："
-    echo "   nohup gost -L tcp://:9526 -F relay+ws://h.rushvpn.win:80 &" 
+    echo "2. 建立本地9526端口至远程80端口的 WebSocket 隧道："
+    echo "   nohup gost -L tcp://:9526 -F relay+ws://h.rushvpn.win:80 &"
+    echo
+    echo "3. 开启本地9998端口，并将流量转发至远端的8888端口："
+    echo "   nohup gost -L tcp://:9998/5.83.221.65:8888 &"
     echo
     echo "请根据需要选择适合的命令执行。"
 }
@@ -113,6 +86,12 @@ function run_ecs_benchmark() {
     curl -L https://github.com/spiritLHLS/ecs/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh -m 1
 }
 
+function install_mysql_and_create_db() {
+    echo "正在安装 MySQL 并新增数据库..."
+    bash <(curl -Ls https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/mysql.sh)
+    echo "MySQL 安装及数据库创建完成。"
+}
+
 # 主菜单
 while true; do
     echo "请选择要执行的操作："
@@ -125,7 +104,8 @@ while true; do
     echo "7. 安装x-ui"
     echo "8. 安装aaPanel"
     echo "9. 运行融合怪脚本测评"
-    echo "10. 退出"
+    echo "10. 安装 MySQL 并新增数据库"
+    echo "11. 退出"
     read -p "请输入选项编号: " choice
 
     case $choice in
@@ -157,6 +137,9 @@ while true; do
             run_ecs_benchmark
             ;;
         10)
+            install_mysql_and_create_db
+            ;;
+        11)
             echo "退出脚本"
             exit 0
             ;;
