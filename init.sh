@@ -87,7 +87,7 @@ function install_gost() {
     echo "   - 使用WebSocket: nohup gost -L relay+ws://:80/:8888 &"
     echo
     echo "2. 开启本地9526端口，并将流量转发至远端的80端口："
-    echo "   nohup gost -L tcp://:9526 -F relay+ws://h.rushvpn.win:80 &"
+    echo "   nohup gost -L tcp://:9526 -F relay+ws://h.rushvpn.win:80 &" 
     echo
     echo "请根据需要选择适合的命令执行。"
 }
