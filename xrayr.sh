@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# 1. 系统更新
-echo "正在更新系统..."
-echo '* libraries/restart-without-asking boolean true' | debconf-set-selections && \
-DEBIAN_FRONTEND=noninteractive apt-get update && \
-DEBIAN_FRONTEND=noninteractive apt-get upgrade -yq
-
 # 2. 执行XrayR安装命令
 echo "正在安装XrayR..."
 bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
