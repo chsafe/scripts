@@ -8,7 +8,7 @@ function ubuntu_non_root_init() {
     fi
 
     # 检查用户是否为 root 用户
-    if [ "$(whoami)" != "root" ];then
+    if [ "$(whoami)" != "root" ]; then
         echo "请使用 root 用户运行该脚本。"
         return 1
     fi
@@ -69,6 +69,12 @@ function install_docker() {
     echo "正在安装 Docker..."
     curl -fsSL https://get.docker.com | bash
     echo "Docker 安装完成。"
+    echo "运行 WordPress 容器示例："
+    echo "docker run --name wp -p 8080:80 -d wordpress"
+    echo "进入 Docker 容器命令："
+    echo "docker exec -it wp /bin/bash"
+    echo "停止 Docker 容器命令："
+    echo "docker stop wp"
 }
 
 function install_x_ui() {
