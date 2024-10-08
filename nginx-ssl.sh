@@ -1,74 +1,36 @@
 #!/bin/bash
 
-# 清除 Nginx 和 Certbot 相关内容
-echo "停止并禁用 Nginx 服务..."
-systemctl stop nginx
-systemctl disable nginx
+# Check if the script is run as root
+if [ "$(whoami)" != "root" ]; then
+    echo "Please run this script as root!"
+    exit 1
+fi
 
-echo "卸载 Nginx..."
-apt-get remove --purge nginx nginx-common nginx-full -y
+# Function to install Nginx and configure HTTPS
+install_nginx_https() {
+    # Get domain and email from the user
+    read -p "Enter your domain name (e.g., your-domain.com): " DOMAIN
+    read -p "Enter your email address (for SSL certificate renewal notices): " EMAIL
 
-echo "删除 Nginx 残留文件和目录..."
-rm -rf /etc/nginx
-rm -rf /var/www/html
-rm -rf /var/log/nginx
+    # Update the package lists
+    echo "Updating system packages..."
+    apt update
 
-echo "卸载 Certbot 和相关组件..."
-apt-get remove --purge certbot python3-certbot-nginx -y
+    # Install Nginx and Certbot
+    echo "Installing Nginx and Certbot..."
+    apt install -y nginx certbot python3-certbot-nginx
 
-echo "删除 Certbot 残留文件..."
-rm -rf /etc/letsencrypt
-rm -rf /var/log/letsencrypt
+    # Create Nginx configuration for the domain (HTTP only for now)
+    NGINX_CONFIG="/etc/nginx/sites-available/$DOMAIN"
+    echo "Creating Nginx configuration for domain $DOMAIN (HTTP only)..."
 
-echo "清理无用的软件包和依赖..."
-apt-get autoremove -y
-apt-get autoclean
-
-# 开始重新安装并配置
-read -p "请输入您的域名: " DOMAIN
-read -p "请输入您的邮箱: " EMAIL
-
-echo "正在更新系统并安装 Nginx 和 Certbot..."
-apt-get update
-apt-get install -y nginx certbot python3-certbot-nginx
-
-
-
-# 配置 Nginx 以 HTTP 模式启动，反向代理到本地 Docker 容器的 8080 端口
-NGINX_CONFIG="/etc/nginx/sites-available/$DOMAIN"
-cat > $NGINX_CONFIG <<EOF
+    cat > $NGINX_CONFIG <<EOF
 server {
     listen 80;
     server_name $DOMAIN;
-}
-EOF
-
-echo "创建 Nginx 配置的符号链接..."
-ln -sf /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
-
-echo "检查 Nginx 配置..."
-nginx -t
-
-echo "启动 Nginx 服务..."
-systemctl restart nginx
-systemctl enable nginx
-
-echo "正在申请 SSL 证书..."
-certbot certonly --webroot -w /var/www/html -d $DOMAIN --email $EMAIL --agree-tos --non-interactive
-
-if [ -f "/etc/letsencrypt/live/$DOMAIN/fullchain.pem" ]; then
-    echo "更新 Nginx 配置以支持 HTTPS..."
-    cat > $NGINX_CONFIG <<EOF
-
-server {
-    listen 443 ssl;
-    server_name $DOMAIN;
-
-    ssl_certificate /etc/letsencrypt/live/$DOMAIN/fullchain.pem;
-    ssl_certificate_key /etc/letsencrypt/live/$DOMAIN/privkey.pem;
 
     location / {
-        proxy_pass http://localhost:8080;
+        proxy_pass http://localhost:7001;  # Proxy to your Docker service
         proxy_set_header Host \$host;
         proxy_set_header X-Real-IP \$remote_addr;
         proxy_set_header X-Forwarded-For \$proxy_add_x_forwarded_for;
@@ -77,12 +39,73 @@ server {
 }
 EOF
 
-    echo "重新检查 Nginx 配置..."
-    nginx -t
-    echo "重新加载 Nginx 服务..."
-    systemctl reload nginx
-else
-    echo "SSL 证书申请失败，请检查错误日志。"
-fi
+    # Enable the Nginx configuration
+    echo "Enabling Nginx configuration..."
+    ln -s /etc/nginx/sites-available/$DOMAIN /etc/nginx/sites-enabled/
 
-echo "SSL 证书申请和 Nginx 配置已完成。"
+    # Test Nginx configuration and reload Nginx
+    echo "Testing and reloading Nginx..."
+    nginx -t && systemctl reload nginx
+
+    # Obtain the SSL certificate from Let's Encrypt
+    echo "Obtaining SSL certificate for $DOMAIN..."
+    certbot --nginx -d $DOMAIN --email $EMAIL --agree-tos --non-interactive
+
+    # Test Nginx configuration again and reload to apply HTTPS settings
+    echo "Reloading Nginx with HTTPS..."
+    nginx -t && systemctl reload nginx
+
+    echo "Setup complete! Your Docker service is now accessible at https://$DOMAIN"
+}
+
+# Function to uninstall Nginx, Certbot, and remove configuration
+uninstall_nginx_https() {
+    # Get domain from the user
+    read -p "Enter the domain name you want to uninstall (e.g., your-domain.com): " DOMAIN
+
+    # Remove the SSL certificates
+    echo "Removing SSL certificates..."
+    certbot delete --cert-name $DOMAIN
+
+    # Remove the Nginx configuration
+    echo "Removing Nginx configuration for domain $DOMAIN..."
+    rm -f /etc/nginx/sites-available/$DOMAIN
+    rm -f /etc/nginx/sites-enabled/$DOMAIN
+
+    # Uninstall Nginx and Certbot
+    echo "Uninstalling Nginx and Certbot..."
+    apt purge -y nginx certbot python3-certbot-nginx
+
+    # Remove residual files
+    echo "Removing residual files..."
+    apt autoremove -y
+    rm -rf /etc/letsencrypt
+    rm -rf /var/www/html
+
+    echo "Nginx, Certbot, and related configurations have been uninstalled."
+}
+
+# Main menu
+while true; do
+    echo "Choose an option:"
+    echo "1. Install Nginx and configure HTTPS"
+    echo "2. Uninstall Nginx, Certbot, and remove configurations"
+    echo "3. Exit"
+    read -p "Enter your choice (1/2/3): " choice
+
+    case $choice in
+        1)
+            install_nginx_https
+            ;;
+        2)
+            uninstall_nginx_https
+            ;;
+        3)
+            echo "Exiting script."
+            exit 0
+            ;;
+        *)
+            echo "Invalid choice, please try again."
+            ;;
+    esac
+done
