@@ -39,7 +39,7 @@ def process_ss_link(line, country_data):
 
 def main():
     # Step 1: Access the URL and get the content
-    url = "http://x.rushvpn.win:7001/api/v1/client/subscribe?token=49b4c85a7793b4f3728b84f753d280e8"
+    url = "https://x.rushvpn.win/api/v1/client/subscribe?token=49b4c85a7793b4f3728b84f753d280e8"
     response = requests.get(url)
 
     if response.status_code != 200:
