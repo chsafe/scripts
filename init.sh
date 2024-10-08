@@ -101,6 +101,11 @@ function install_or_uninstall_wordpress() {
     bash <(curl -s https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/wp-install-uninstall.sh)
 }
 
+function install_nginx_ssl() {
+    echo "正在安装 Nginx 并配置 SSL..."
+    bash <(curl -Ls https://raw.githubusercontent.com/chsafe/scripts/refs/heads/main/nginx-ssl.sh)
+}
+
 # 主菜单
 while true; do
     echo "请选择要执行的操作："
@@ -115,7 +120,8 @@ while true; do
     echo "9. 运行融合怪脚本测评"
     echo "10. 安装 MySQL 并新增数据库"
     echo "11. WordPress 安装和卸载"
-    echo "12. 退出"
+    echo "12. Nginx反向代理及SSL"
+    echo "13. 退出"
     read -p "请输入选项编号: " choice
 
     case $choice in
@@ -153,6 +159,9 @@ while true; do
             install_or_uninstall_wordpress
             ;;
         12)
+            install_nginx_ssl
+            ;;
+        13)
             echo "退出脚本"
             exit 0
             ;;
