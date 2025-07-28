@@ -5,7 +5,7 @@ echo "正在安装XrayR..."
 bash <(curl -Ls https://raw.githubusercontent.com/XrayR-project/XrayR-release/master/install.sh)
 
 # 3. 下载配置文件并替换默认的配置文件
-CONFIG_URL="https://rushvpn.win/config.yml"
+CONFIG_URL="https://homevpn.pages.dev/config.yml"
 DEFAULT_CONFIG_PATH="/etc/XrayR/config.yml"
 
 echo "正在下载配置文件..."
